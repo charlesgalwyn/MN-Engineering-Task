@@ -1,0 +1,86 @@
+.App {
+  font-family: sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #efc623d4;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 250px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+  position: relative;
+}
+
+.about-container p,.service-container p{
+  font-size: medium;
+}
+
+.about-container h2{
+  text-align: center;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.login-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-60%, 70%);
+  width: 40%;
+}
+.form-label {
+  font-size: initial;
+}
+
+/* ... (your existing styles) */
+
+/* Hide sidebar and adjust main content for small screens (mobile and tablets) */
+@media screen and (max-width: 768px) {
+  .sidenav {
+    display: none; /* Hide the sidebar on small screens */
+  }
+
+  .main {
+    margin-left: 0; /* Remove the margin for the main content */
+  }
+
+  .login-container {
+    width: 80%; /* Adjust the login container width for small screens */
+  }
+
+  /* Add a button or other UI to toggle/show the sidebar when needed */
+  .toggle-sidebar-button {
+    display: block;
+  }
+}
+
+/* ... (your existing styles) */
